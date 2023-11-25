@@ -11,7 +11,7 @@ const WorkoutForm = ({ show, setShow }) => {
     e.preventDefault()//to trun off Default sittings of form to reload page ever time button is click(submit)
     try {
       //const workout={title,load,reps}
-      await axios.post("http://localhost:4000/api/workout/",{title,load,reps},{ headers: {
+      await axios.post("https://workout-full-backend-xmkl.vercel.app/api/workout/",{title,load,reps},{ headers: {
         'Authorization': `Bearer ${user.token}`
       }})
       setLoad("")
