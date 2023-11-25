@@ -11,7 +11,7 @@ const Home = () => {
     const fetchData = async () => {
         try {
             //setLoading(true)
-            let response = await axios.get("https://workout-full-backend-xmkl.vercel.app//api/workout", {
+            let response = await axios.get("https://workout-full-backend-xmkl.vercel.app/api/workout", {
                 headers: {
                     'authorization': `Bearer ${user.token}`
                 }
