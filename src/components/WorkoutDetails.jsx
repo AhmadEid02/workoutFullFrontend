@@ -11,7 +11,7 @@ const WorkoutDetails = ({ workout, show, setShow }) => {
       // let response = await axios.delete("http://localhost:4000/api/workout/",workout._id,{ headers: {
       //           'Authorization': `Bearer ${user.token}`
       //         }})
-      await axios.delete(`http://localhost:4000/api/workout/${workout._id}`,{ headers: {
+      await axios.delete(`https://workout-full-backend-xmkl.vercel.app/api/workout/${workout._id}`,{ headers: {
         'Authorization': `Bearer ${user.token}`
       }})
 
